@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const itemController = require('../controllers/itemController');
 
-// Rotas para CRUD de itens
 router.post('/', itemController.createItem);
 router.get('/', itemController.getAllItems);
 router.get('/:id', itemController.getItemById);
